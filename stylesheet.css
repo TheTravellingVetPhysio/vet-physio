@@ -1,0 +1,143 @@
+* {
+    box-sizing:border-box; 
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #84a59d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+header {
+    border-radius: 5px;
+    background: #f5cac3;
+    border: 10px solid #f7ede2;
+    padding: 5%;
+    text-align: center; 
+}
+
+nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    color: #f7ede2;
+    text-transform: uppercase;
+}
+
+nav a {
+    color:  #f28482;
+}
+
+nav a:hover {
+    color: #f7ede2;
+}
+
+main {
+    background: #f7ede2;
+    padding: 3%;
+    border-radius: 5px;
+    margin: 30px 0px;
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color:#84a59d;
+}
+
+a {
+    color:  #f28482;
+}
+
+a:hover {
+    color: #f5cac3;
+}
+
+img {
+    border: 2 px solid #f28482;
+    max-width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+table {
+    padding: 10px; 
+    border-radius: 5px;"
+}
+
+td {
+    padding: 10px;
+    width: 50%;
+    vertical-align: top;
+}
+
+#fam {
+    background-color: #f5cac3;
+    border: 2px solid #f28482;
+}
+
+#soft {
+    background-color: #84a59d;
+    border: 2px solid #2c3a37;
+
+}
+
+#soft h3 {
+    color: #2c3a37;
+}
+
+.highlight {
+    color: #f28482;
+}
+
+footer {
+    background: #2c3a37;
+    padding: 3%;
+    border-radius: 5px;
+    text-align: center; 
+    color: #f5cac3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three";
+    
+    @media (min-width: 400px) {
+    grid-template-areas: 
+    "one two three";
+}
+}
+}
+
+/* #container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+    */
+
+Questions:
+
+Responsiveness: Why use a class for <main> instead of just putting it in the main part of the stylesheet?
+
+ID: Can an element have several id's? E.g. <p id="one" id="titel">
+
+Grid template area: How can you do overlays that are not of the same size (i.e. with your example with rows/columns, where 1 spanned 3 columns and 1 only spanned 1)?
