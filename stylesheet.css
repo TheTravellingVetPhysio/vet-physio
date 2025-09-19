@@ -37,6 +37,19 @@ nav a:hover {
     color: #f7ede2;
 }
 
+nav > ul > li {
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three";
+    
+    @media (min-width: 400px) {
+    grid-template-areas: 
+    "one two three";
+}
+}
+
 main {
     background: #f7ede2;
     padding: 3%;
@@ -112,18 +125,6 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#container {
-    display: grid;
-    grid-template-areas: 
-    "one"
-    "two"
-    "three";
-    
-    @media (min-width: 400px) {
-    grid-template-areas: 
-    "one two three";
-}
-}
 }
 
 /* #container > div {
