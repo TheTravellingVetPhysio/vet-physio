@@ -58,7 +58,7 @@ nav > ul > li {
     padding: 0.1rem;
 }
 
-.hidden {
+nav > ul > li:nth-child(even) {
     @media (max-width: 580px) {
         display: none;
     }
